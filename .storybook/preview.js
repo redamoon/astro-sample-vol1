@@ -1,3 +1,4 @@
+import '../src/styles/globals.css';
 /** @type { import('@storybook/vue').Preview } */
 const preview = {
   parameters: {
