@@ -23,5 +23,8 @@ export const Default: Story = {
   args: {
     title: 'ロゴ',
   },
+  parameters: {
+    layout: 'fullscreen',
+  },
 };
 export default meta;
