@@ -8,7 +8,7 @@ type Args = {
 };
 
 const meta: Meta<typeof Header> = {
-  title: 'Components/Layout/Header',
+  title: 'Components/Layouts/Header',
   component: Header,
   render: (args: Args) => ({
     components: { Header },
