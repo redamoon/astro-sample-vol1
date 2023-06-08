@@ -1,0 +1,10 @@
+---
+import type { Option } from './type';
+const { title, href } = Astro.props as Option;
+---
+
+<div class="bg-sky-500 p-5">
+  <h1>
+    <a href={href}>{title}</a>
+  </h1>
+</div>
