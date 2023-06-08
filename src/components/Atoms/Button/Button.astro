@@ -1,0 +1,8 @@
+---
+import type { Props } from './type';
+const { title, className } = Astro.props as Props;
+---
+
+<button type="button" class:list={[className]}>
+  {title}
+</button>

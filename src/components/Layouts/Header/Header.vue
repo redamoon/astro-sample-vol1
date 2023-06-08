@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Option } from './type';
 import { PropType } from 'vue';
-const { title } = defineProps({
+const props = defineProps({
   title: {
     type: String as PropType<Option['title'] | ''>,
     required: true,
@@ -16,7 +16,7 @@ const { title } = defineProps({
 <template>
   <div class="bg-sky-500 p-5">
     <h1>
-      <a :href="href">{{ title }}</a>
+      <a :href="props.href">{{ props.title }}</a>
     </h1>
   </div>
 </template>

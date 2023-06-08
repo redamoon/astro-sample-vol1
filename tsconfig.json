@@ -1,8 +1,10 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "jsx": "preserve",
     "allowJs": true,
-    "checkJs": false
-  }
+    "checkJs": false,
+    "importsNotUsedAsValues": "error",
+  },
+   "exclude": ["src/**/*.stories.ts"]
 }

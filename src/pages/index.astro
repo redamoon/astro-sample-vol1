@@ -1,10 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Button from '../components/Atoms/Button/Button.astro';
+import ReactButton from '../components/Atoms/ReactButton/ReactButton';
+import VueButton from '../components/Atoms/VueButton/VueButton.vue';
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
+    <Button title="Astro Component Button" className="bg-amber-600 p-2 rounded-full" /><br />
+    <ReactButton title="React Component Button" className="bg-blue-600 p-2 rounded-full mt-5" /><br />
+    <VueButton title="Vue Component Button" className="bg-green-600 p-2 rounded-full mt-5" />
     <h1 class="font-bold">Welcome to <span class="text-gradient">Astro</span></h1>
     <p class="instructions">
       To get started, open the directory <code>src/pages</code> in your project.<br />

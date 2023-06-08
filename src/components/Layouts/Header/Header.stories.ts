@@ -14,6 +14,22 @@ const meta: Meta<typeof Header> = {
     },
     template: "<Header v-bind='args' />",
   }),
+  args: {
+    title: 'ロゴ',
+    href: '/',
+  },
+  argTypes: {
+    title: {
+      control: {
+        type: 'text',
+      },
+    },
+    href: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 };
 
 export const Default: Story = {
