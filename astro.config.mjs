@@ -11,7 +11,6 @@ export function removeDoctype(html) {
 }
 
 export function ssi(html) {
-  console.log(html);
   const replacement = '<!--#include virtual="/include/header.html" -->';
   return html.replace('<div class="bg-sky-500 p-5">', replacement);
 }
